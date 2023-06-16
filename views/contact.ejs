@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/javascript/contact.js" defer></script>
+    <title>Samixx Business Analyser</title>
+</head>
+<header>
+    <nav>
+        <div class="nav-head">
+            <h2><a href="/">SAMIXX BUSINESS ADVICER</a></h2>
+        </div>
+        <div class="nav-content">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li>
+                    <a href="#" class="more-option-btn">MORE OPTIONS</a>
+                    <div class="more-options-div">
+                        <ul>
+                            <li><a href="/profile">Profile</a></li>
+                            <li><a href="#">Search History</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-content-mobile-div">
+            <div class="nav-img">
+                <img src="/images/icon-menu.svg" alt="openbtn" class="open-btn">
+            </div>
+        </div>
+        <div class="nav-open-item">
+            <img src="/images/icon-close-menu.svg" alt="closebtn" class="close-btn">
+            <ul>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="#">Search History</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+    <form class="contact-form">
+        <div>
+            <label for="userName">Confirm Your Name</label>
+            <input name="userName" id="userName" type="text" value="<%=userName%>" autocomplete="no">
+        </div>
+        <div>
+            <label for="userEmail">Confirm Your Email</label>
+            <input name="userEmail" id="userEmail" type="email" value="<%=userEmail%>" autocomplete="no">
+        </div>
+        <div>
+            <label for="userMessage">Enter Your Message</label>
+            <textarea name="userMessage" id="userMessage" cols="80" rows="4" placeholder="Enter Your Message For Me and I'll Do My Best To Reply"></textarea>
+        </div> 
+        <button class="send-btn">SEND</button>
+    </form>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+        emailjs.init("oIs0gTBFCX1i_MzZn");
+        })();
+    </script>
+</body>
+</html>

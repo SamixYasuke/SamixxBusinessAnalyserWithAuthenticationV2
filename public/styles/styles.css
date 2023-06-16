@@ -1,0 +1,743 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 40px #6E77EE;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 70px;
+}
+
+.nav-head h2 a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-head h2 a:hover{
+    text-decoration: dotted;
+    color: #6E77EE;
+}
+
+nav div.nav-content ul{
+    display: flex;
+    gap: 60px;  
+}
+
+nav div.nav-content ul li, nav div.nav-content ul li a{
+    list-style: none;
+    color: rgb(116, 116, 116);
+    text-decoration: none;
+}
+
+nav div.nav-content ul li a:hover{
+    color: black;
+    text-decoration: overline;
+}
+
+.more-options-div {
+    position: absolute;
+    top: 50px;
+    height: 200px;
+    width: 150px;
+    border-radius: 10px 10px 50px 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 40px #c5c5c5;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: opacity ease-in-out 0.2s, transform ease-in-out 0.2s;
+    pointer-events: none;
+}
+  
+.inactive {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.more-options-div ul{
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 20px!important;
+}
+
+.indexForm{
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 700px;
+    background-color: #6E77EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 80vw;
+    border-radius: 20px 20px 150px 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+}  
+
+.indexForm input[type="text"] {
+    margin-top: 60px;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: 2px dotted #000000; /* Changed border-style to border and added border color */
+}
+  
+.indexForm input[type="text"]:focus {
+    outline: none; /* Removes default focus outline */
+    border-color: #6E77EE; /* Changed border color on focus */
+    box-shadow: 0 0 50px #000000; /* Added box shadow on focus for visual emphasis */
+}
+
+.selection-div{
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+
+.selection-div select{
+    padding: 6px 35px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.selection-div select:focus{
+    outline: none;
+    border-color: #6E77EE;
+    box-shadow: 0 0 50px #000000;
+}
+
+.selection-div select:hover{
+    cursor: pointer;
+}
+
+.submit-btn-div{
+    margin-top: 50px;
+}
+
+.submit-btn-div button{
+    padding: 15px 35px;
+    border-radius: 25px;
+    border-color: #000000;
+    transition: box-shadow ease-in 0.4s;
+}
+
+.submit-btn-div button:hover{
+    box-shadow: 2px 2px 50px rgb(75, 75, 75);
+    cursor: pointer;
+}
+
+.open-btn{
+    display: none;
+}
+
+.nav-open-item{
+    display: none;
+}
+
+.disabled-btn{
+    cursor: progress!important;
+    background-color: rgb(172, 172, 172)!important;
+}
+
+.register-form .register-form-fields{
+    display: grid;
+    grid-template-areas: 'a b';
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background-color: #6E77EE;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 45vw;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px 20px 80px 20px;
+}
+  
+
+.register-form .register-form-fields div{
+    margin-top: 40px;
+}
+
+.register-form .register-form-fields div label{
+    display: flex;
+    justify-content: center;
+    color: rgb(230, 230, 230);
+}
+
+.register-form .register-form-fields div input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px dotted #000000;
+}
+  
+.register-form .register-form-fields div input:focus {
+    outline: none; /* Removes default focus outline */
+    border-color: #6E77EE; /* Changed border color on focus */
+    box-shadow: 0 0 50px #000000; /* Added box shadow on focus for visual emphasis */
+}
+
+.register-form button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px 60px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.register-form a{
+    text-decoration: none;
+    display: block;
+    font-size: large;
+    width: 50px;
+    margin: 0 auto;
+    color: #000000;
+    padding-bottom: 30px;
+}
+
+.register-form a:hover{
+    color: #6E77EE;
+}
+  
+.login-form{
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #6E77EE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    border-radius: 20px 20px 100px 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.login-form div{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.login-form div label{
+    color: rgb(233, 228, 228);
+}
+
+.login-form div input{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: #000000;
+}
+
+.login-form div input:focus{
+    border-color: #6E77EE;
+    outline: none;
+    box-shadow: 0 0 50px #000000;
+}
+
+.login-btn{
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.login-btn-disabled{
+    cursor: progress;
+}
+
+.login-form a{
+    text-decoration: none;
+    font-size: large;
+    color: #dddada;
+    margin-bottom: 20px;
+}
+
+.login-form a:hover{
+    color: #000000;
+}
+
+.profile-container{
+    background-color: #6E77EE;
+    color: rgb(255, 255, 255);
+    margin: 100px auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 0 30px;
+    border-radius: 30px 30px 100px 30px;
+}
+
+.result-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 50px auto;
+    display: block;
+}
+
+.result-div{
+    margin: 70px auto;
+    width: 70vw;
+    background-color: #6E77EE;
+    color: white;
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+    grid-template-areas: 'a b';
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px 20px 130px 20px;
+}
+
+.col-1{
+    border-radius: 20px 20px 100px 20px;
+    padding: 10px;
+    transition: box-shadow ease-in-out 0.5s;
+}
+
+.col-1:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.col-1 h2{
+    display: flex;
+    justify-content: center;
+}
+
+.col-2{
+    border-radius: 20px 20px 20px 100px;
+    padding: 10px;
+    transition: box-shadow ease-in-out 0.5s;
+}
+
+.col-2:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.col-2 h2{
+    display: flex;
+    justify-content: center;
+}
+
+.col-3{
+    border-radius: 20px 100px 20px 20px;
+    padding: 10px;
+    transition: box-shadow ease-in-out 0.5s;
+}
+
+.col-3:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.col-3 h2{
+    display: flex;
+    justify-content: center;
+}
+
+.col-4{
+    border-radius: 100px 20px 100px 20px;
+    padding: 10px;
+    transition: box-shadow ease-in-out 0.5s;
+}
+
+.col-4:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.col-4 h2{
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-form{
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6E77EE;
+    width: 70vw;
+    border-radius: 20px 20px 140px 20px;
+}
+
+.contact-form div label{
+    color: rgb(255, 255, 255);
+}
+
+.contact-form div input{
+    padding: 10px 20px;
+    width: 50%;
+    border-radius: 25px;
+    border-style: dotted;
+}
+
+.contact-form div input:focus{
+    border-color: #6E77EE;
+    outline: none;
+    box-shadow: 0 0 50px #000000;
+}
+
+.contact-form div textarea{
+    box-sizing: border-box;
+    padding: 10px 40px;
+    width: 100%;
+    border-radius: 20vw;
+    border-style: dotted;
+}
+
+.contact-form div textarea:focus{
+    border-color: #6E77EE;
+    outline: none;
+    box-shadow: 0 0 50px #000000;
+}
+
+.contact-form div:not(:nth-child(3)){
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+}
+
+.contact-form div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form div:nth-child(3) label{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form button{
+    margin: 30px 0;
+    padding: 13px 50px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 740px){
+    .nav-content{
+        display: none;
+    }
+
+    .open-btn{
+        display: flex;
+        cursor: pointer;
+        transform: translateY(15px);
+    }
+
+    .close-btn{
+        margin-top: 30px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 1px 40px;
+    }
+
+    .nav-head h2{
+        font-size: large;
+    }
+
+    .nav-open-item{
+        display: inline-block;
+        position: fixed;
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 1000px;
+        transition: right ease-in-out 0.4s;
+        
+    }
+
+    .nav-open-item ul li{
+        list-style: none;
+        margin-top: 50px;
+    }
+
+    .nav-open-item ul li a{
+        color: rgb(150, 148, 148);
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    .nav-open-item ul li a:hover{
+        color: black;
+    }
+
+    .active-nav{
+        right: 0;
+    }
+    
+    .selection-div{
+        display: block;
+    }
+    .countryInput, .stateInput{
+        display: block;
+        width: 100%!important;
+    }
+
+    .submit-btn-div{
+        margin-top: 50px;
+    }
+    
+    .submit-btn-div button{
+        padding: 15px 20px;
+        width: 90%;
+        border-radius: 25px;
+        border-color: #000000;
+        transition: box-shadow ease-in 0.4s;
+    }
+
+    .indexForm{
+        margin: 0 auto;
+        margin-top: 100px;
+        max-width: 700px;
+        background-color: #6E77EE;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 55vh;
+        width: 90vw;
+        border-radius: 20px 20px 150px 20px;
+    }
+    .register-form .register-form-fields{
+        display: grid;
+        grid-template-areas: 'a';
+        grid-template-columns: 1fr;
+        gap: 30px;
+        background-color: #6E77EE;
+        margin: 0 auto;
+        margin-top: 70px;
+        padding-bottom: 60px;
+        border-radius: 80px 20px 80px 20px;
+        width: 80vw;
+        height: auto;
+    }
+      
+    
+    .register-form .register-form-fields div{
+        margin-top: 40px;
+    }
+    
+    .register-form .register-form-fields div label{
+        display: flex;
+        justify-content: center;
+        color: rgb(230, 230, 230);
+    }
+    
+    .register-form .register-form-fields div input{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 50px;
+        border-radius: 20px;
+        outline: none;
+    }
+    
+    .register-form button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 10px 60px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .login-form div{
+        margin-top: 50px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .result-div{
+        grid-template-areas: 'a';
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .result-img{
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 50px auto;
+        display: block;
+    }
+
+
+    .col-1{
+        border-radius: 20px 20px 20px 20px;
+        padding: 10px;
+    }
+    
+    .col-1 h2{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .col-2{
+        border-radius: 20px 20px 20px 20px;
+        padding: 10px;
+    }
+
+    .col-3{
+        border-radius: 20px 20px 20px 20px;
+        padding: 10px;
+    }
+    
+    .col-4{
+        border-radius: 20px 20px 100px 20px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .result-div{
+        margin: 70px auto;
+        width: 85vw;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profile-container{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile-container{
+        width: 70vw;
+    }
+
+    .contact-form{
+        margin: 70px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #6E77EE;
+        width: 70vw;
+        border-radius: 20px 20px 140px 20px;
+    }
+    
+    .contact-form div label{
+        color: rgb(255, 255, 255);
+    }
+    
+    .contact-form div input{
+        box-sizing: border-box;
+        padding: 10px 20px;
+        width: 100%;
+        border-radius: 25px;
+        border-style: dotted;
+    }
+    
+    .contact-form div input:focus{
+        border-color: #6E77EE;
+        outline: none;
+        box-shadow: 0 0 50px #000000;
+    }
+    
+    .contact-form div:not(:nth-child(3)){
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 30px;
+    }
+
+    .contact-form button{
+        box-sizing: border-box;
+        margin: 30px 0;
+        padding: 13px 30px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .register-form .register-form-fields{
+        display: grid;
+        grid-template-areas: 'a';
+        grid-template-columns: 1fr;
+        gap: 30px;
+        background-color: #6E77EE;
+        margin: 0 auto;
+        margin-top: 70px;
+        padding-bottom: 60px;
+        border-radius: 80px 20px 80px 20px;
+        width: 70vw;
+        height: auto;
+    }
+
+    .login-form div{
+        margin-top: 50px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .profile-container{
+        justify-content: start;
+        align-items: start;
+        width: 80vw;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 1px 20px;
+    }
+
+    .submit-btn-div button{
+        padding: 15px 5px;
+        width: 80%;
+        border-radius: 25px;
+        border-color: #000000;
+        transition: box-shadow ease-in 0.4s;
+    }
+
+    .register-form .register-form-fields{
+        display: grid;
+        grid-template-areas: 'a';
+        grid-template-columns: 1fr;
+        gap: 30px;
+        background-color: #6E77EE;
+        margin: 0 auto;
+        margin-top: 70px;
+        padding-bottom: 60px;
+        border-radius: 80px 20px 80px 20px;
+        width: 60vw;
+        height: auto;
+    }
+}

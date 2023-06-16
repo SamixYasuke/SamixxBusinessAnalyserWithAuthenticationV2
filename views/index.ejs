@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/javascript/index.js" defer></script>
+    <title>Samixx Business Analyser</title>
+</head>
+<header>
+    <nav>
+        <div class="nav-head">
+            <h2><a href="/">SAMIXX BUSINESS ADVICER</a></h2>
+        </div>
+        <div class="nav-content">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li>
+                    <a href="#" class="more-option-btn">MORE OPTIONS</a>
+                    <div class="more-options-div">
+                        <ul>
+                            <li><a href="/profile">Profile</a></li>
+                            <li><a href="#">Search History</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-content-mobile-div">
+            <div class="nav-img">
+                <img src="/images/icon-menu.svg" alt="openbtn" class="open-btn">
+            </div>
+        </div>
+        <div class="nav-open-item">
+            <img src="/images/icon-close-menu.svg" alt="closebtn" class="close-btn">
+            <ul>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="#">Search History</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+    <main>
+        <form action="/" method="post" class="indexForm">
+            <input type="text" placeholder="Enter a Business" name="businessInput" autocomplete="no">
+            <div class="selection-div">
+                <select name="countryInput" class="countryInput">
+                    <option value="" selected>Select a Country</option>
+                </select>
+                <select name="stateInput" class="stateInput">
+                    <option value="" selected>Select a State</option>
+                    <option value="Abuja">Abuja</option>
+                </select>
+            </div>
+            <div class="submit-btn-div">
+                <button type="submit" class="submitBtn">GET BUSINESS ANALYSIS</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

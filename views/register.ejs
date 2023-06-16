@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/javascript/register.js" defer></script>
+    <title>Samixx Business Analyser</title>
+</head>
+
+<body>
+    <form action="/register" method="post" class="register-form">
+        <div class="register-form-fields">
+            <div>
+                <label for="userName">Enter Your User Name</label>
+                <input type="text" name="userName" id="userName" placeholder="Enter Your Name" autocomplete="no-randomvalue">
+            </div>
+            <div>
+                <label for="firstName">Enter Your First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name" autocomplete="no-randomvalue">
+            </div>
+            <div>
+                <label for="secondName">Enter Your Second Name</label>
+                <input type="text" name="secondName" id="secondName" placeholder="Enter Your Second Name" autocomplete="no-randomvalue">
+            </div>
+            <div>
+                <label for="userEmail">Enter Your Email Address</label>
+                <input type="email" name="userEmail" id="userEmail" placeholder="Enter Your Email Address" autocomplete="no-randomvalue">
+            </div>
+            <div>
+                <label for="userPassword">Enter Your Password</label>
+                <input type="password" name="userPassword" id="userPassword" placeholder="Enter Your Password" autocomplete="no-randomvalue">
+            </div>
+            <div>
+                <label for="userPasswordConfirmation">Confirm Your Password</label>
+                <input type="password" name="userPasswordConfirmation" id="userPasswordConfirmation" placeholder="Confirm Your Password" autocomplete="no-randomvalue">
+            </div>
+        </div>
+        <button type="submit" class="register-btn">REGISTER</button>
+        <a href="/login">Login</a>
+    </form>
+</body>
+</html>

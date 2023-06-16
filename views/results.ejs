@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/javascript/result.js" defer></script>
+    <title>Samixx Business Analyser <%=businessName%></title>
+</head>
+<header>
+    <nav>
+        <div class="nav-head">
+            <h2><a href="/">SAMIXX BUSINESS ADVICER</a></h2>
+        </div>
+        <div class="nav-content">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li>
+                    <a href="#" class="more-option-btn">MORE OPTIONS</a>
+                    <div class="more-options-div">
+                        <ul>
+                            <li><a href="/profile">Profile</a></li>
+                            <li><a href="#">Search History</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-content-mobile-div">
+            <div class="nav-img">
+                <img src="/images/icon-menu.svg" alt="openbtn" class="open-btn">
+            </div>
+        </div>
+        <div class="nav-open-item">
+            <img src="/images/icon-close-menu.svg" alt="closebtn" class="close-btn">
+            <ul>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="#">Search History</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+    <img class="result-img" src="<%=imgResponse%>" alt="gen-img">
+    <main class="result-div">
+        <div class="col-1">
+            <h2>BUSINESS OVERVIEW</h2>
+            <h3>Name Of Business: <%=businessName%></h3>
+            <h3>Type of Business: <%=typeOfBusiness%></h3>
+            <h3>Industry: <%=industry%></h3>
+            <h3>Location: <%=location%></h3>
+            <h3>Description Of Business: <%=descriptionOfTheBusiness%></h3>
+        </div>
+        <div class="col-2">
+            <h2>SIMILAR BUSINESSES</h2>
+            <h3>Business 1: <%=business1%></h3>
+            <h3>Business 2: <%=business2%></h3>
+        </div>
+        <div class="col-3">
+            <h2>RISK ASSESSMENT</h2>
+            <h3>Legal Risk: <%=legalRisk%></h3>
+            <h3>Financial Risk: <%=financialRisk%></h3>
+            <h3>Operational Risk: <%=operationalRisk%></h3>
+            <h3>Market Risks: <%=marketRisks%></h3>
+        </div>
+        <div class="col-4">
+            <h2>STARTUP COSTS</h2>
+            <h3>Fixed Costs: <%=fixedCosts%></h3>
+            <h3>Variable Costs: <%=variableCost%></h3>
+            <h3>Total StartUp Costs: <%=totalStartupCost%></h3>
+        </div>
+    </main>
+</body>
+</html>
