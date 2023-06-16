@@ -19,7 +19,7 @@ const getData = async (nameOfBusiness, locationOfBusiness) => {
     try {
       const { Configuration, OpenAIApi } = require("openai");
       const configuration = new Configuration({
-        apiKey: "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"
+        apiKey: process.env.OPENAI_API_KEY
       });
       const openai = new OpenAIApi(configuration);
   
