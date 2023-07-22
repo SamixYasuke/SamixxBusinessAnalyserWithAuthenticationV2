@@ -21,7 +21,7 @@
                     <div class="more-options-div">
                         <ul>
                             <li><a href="/profile">Profile</a></li>
-                            <li><a href="#">Search History</a></li>
+                            <li><a href="/searchHistory">Search History</a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="/logout">Logout</a></li>
                         </ul>
@@ -38,7 +38,7 @@
             <img src="/images/icon-close-menu.svg" alt="closebtn" class="close-btn">
             <ul>
                 <li><a href="/profile">Profile</a></li>
-                <li><a href="#">Search History</a></li>
+                <li><a href="/searchHistory">Search History</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="/logout">Logout</a></li>
@@ -53,27 +53,10 @@
             <h2>BUSINESS OVERVIEW</h2>
             <h3>Name Of Business: <%=businessName%></h3>
             <h3>Type of Business: <%=typeOfBusiness%></h3>
-            <h3>Industry: <%=industry%></h3>
-            <h3>Location: <%=location%></h3>
-            <h3>Description Of Business: <%=descriptionOfTheBusiness%></h3>
         </div>
         <div class="col-2">
-            <h2>SIMILAR BUSINESSES</h2>
-            <h3>Business 1: <%=business1%></h3>
-            <h3>Business 2: <%=business2%></h3>
-        </div>
-        <div class="col-3">
-            <h2>RISK ASSESSMENT</h2>
-            <h3>Legal Risk: <%=legalRisk%></h3>
-            <h3>Financial Risk: <%=financialRisk%></h3>
-            <h3>Operational Risk: <%=operationalRisk%></h3>
-            <h3>Market Risks: <%=marketRisks%></h3>
-        </div>
-        <div class="col-4">
-            <h2>STARTUP COSTS</h2>
-            <h3>Fixed Costs: <%=fixedCosts%></h3>
-            <h3>Variable Costs: <%=variableCost%></h3>
-            <h3>Total StartUp Costs: <%=totalStartupCost%></h3>
+            <h2>BUSINESS ADVICE</h2>
+            <h3><%=businessExplanation%></h3>
         </div>
     </main>
 </body>
