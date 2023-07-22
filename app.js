@@ -51,19 +51,9 @@ app.post("/", async (req, res) => {
       businessName : nameOfBusiness,
       typeOfBusiness : result.typeOfBusiness,
       industry : result.industry,
-      location : locationOfBusiness,
-      descriptionOfTheBusiness : result.descriptionOfTheBusiness,
-      business1 : result.business1,
-      business2 : result.business2,
-      legalRisk : result.legalRisk,
-      financialRisk : result.financialRisk,
-      operationalRisk : result.operationalRisk,
-      marketRisks : result.marketRisks,
-      fixedCosts : result.fixedCosts,
-      variableCost : result.variableCost,
-      totalStartupCost : result.totalStartupCost,
+      businessExplanation: result.businessExplanation,
       imgResponse : result.imgResponse
-    })
+    });
     console.log("Success");
   } catch (err) {
     console.error(err.message);
